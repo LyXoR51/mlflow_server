@@ -66,7 +66,7 @@ git push origin main
 ## 5. Configure environment variables
 
 In your Hugging Face Space, go to **Settings → Variables and secrets**.
-Add the following variables (adapt the values to your environment):
+Add the following **SECRETS** (adapt the values to your environment):
 
 | Variable                      | Example Value                                                                                                            | Description                         |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
