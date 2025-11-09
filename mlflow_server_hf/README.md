@@ -5,22 +5,7 @@ The MLflow server connects to an **S3 bucket** for artifact storage and a **Post
 
 ---
 
-## 1. Prepare your local workspace
-
-Create a working directory and clone this repository locally:
-
-```bash
-# Create a working directory
-mkdir mlflow-server-huggingface
-cd mlflow-server-huggingface
-
-# Clone the base repository
-git clone https://github.com/LyXoR51/mlflow_server.git
-```
-
----
-
-## 2. Create a new Hugging Face Space
+## 1. Create a new Hugging Face Space
 
 1. Go to [Hugging Face Spaces](https://huggingface.co/spaces).
 2. Create a new Space — for example: `mlflow-server`.
@@ -35,7 +20,7 @@ git clone https://huggingface.co/spaces/<HF-username>/mlflow-server
 
 ---
 
-## 3. Copy the deployment files
+## 2. Copy the deployment files
 
 Copy the Docker configuration files into your local Hugging Face Space folder:
 
@@ -46,7 +31,7 @@ cp mlflow_server/mlflow_server_hf/requirements.txt mlflow-server/
 
 ---
 
-## 4. Set your Hugging Face remote and push changes
+## 3. Set your Hugging Face remote and push changes
 
 Configure the Hugging Face remote using your user token, then commit and push the updated files:
 
@@ -63,7 +48,7 @@ git push origin main
 
 ---
 
-## 5. Configure environment variables
+## 4. Configure environment variables
 
 In your Hugging Face Space, go to **Settings → Variables and secrets**.
 Add the following **SECRETS** (adapt the values to your environment):
@@ -80,7 +65,7 @@ Add the following **SECRETS** (adapt the values to your environment):
 
 ---
 
-## 6. Access your MLflow server
+## 5. Access your MLflow server
 
 Once deployed, your MLflow instance will be available at:
 
