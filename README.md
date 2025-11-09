@@ -45,19 +45,19 @@ mlflow-server/
 
 ## Available Configurations
 
-### 1. **mlflow_server_hf/**
+### 1. **mlflow_server_hf**
 
 Deploy an MLflow tracking server on **Hugging Face Spaces**.
 Connects to a **PostgreSQL database** and an **S3 bucket** for backend and artifact storage.
 Ideal for lightweight cloud deployments or hosted demos.
 
-### 2. **mlflow_server_local/**
+### 2. **mlflow_server_local**
 
 Run an MLflow server **locally** using Docker Compose.
 Includes local storage and database integration.
 Perfect for development, prototyping, and offline testing.
 
-### 3. **test_tracking_URI
+### 3. **test_tracking_URI**
 
 A minimal setup to **test connections** to a remote MLflow tracking URI.
 Useful for validating authentication, SSL, and client-server communication.
