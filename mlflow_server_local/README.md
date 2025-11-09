@@ -1,8 +1,3 @@
-Parfait 💪 — voici un **README.md propre, clair et prêt à être publié** pour ton dossier `mlflow_server_local/`.
-Il suit le style des autres (anglais technique, bien structuré, sans emojis), avec des explications concises et les commandes bash à exécuter.
-
----
-
 # Run an MLflow Server Locally with Docker Compose
 
 This setup runs a complete **MLflow Tracking Server** environment on your local machine using **Docker Compose**.
