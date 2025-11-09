@@ -68,7 +68,7 @@ This command will start:
 
 ---
 
-## 5. Stop or Remove the Containers
+## 4. Stop or Remove the Containers
 
 To stop and remove the containers and network (without deleting data):
 
@@ -86,7 +86,7 @@ docker compose down
 
 ---
 
-## 6. Configure Your MLflow Client
+## 5. Configure Your MLflow Client
 
 Once the services are running, you can connect to the local MLflow server from Python or CLI:
 
@@ -96,7 +96,7 @@ export MLFLOW_TRACKING_URI=http://localhost:5000
 
 ---
 
-## 7. Verify Artifact Storage
+## 6. Verify Artifact Storage
 
 After running an experiment, open the **MinIO console** and check the bucket defined in `.env`
 (e.g., `mlflow`). You should see logged artifacts such as models, metrics, and parameters.
