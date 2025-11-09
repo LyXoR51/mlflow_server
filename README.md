@@ -57,7 +57,7 @@ Run an MLflow server **locally** using Docker Compose.
 Includes local storage and database integration.
 Perfect for development, prototyping, and offline testing.
 
-### 3. **test_server_URI/**
+### 3. **test_tracking_URI
 
 A minimal setup to **test connections** to a remote MLflow tracking URI.
 Useful for validating authentication, SSL, and client-server communication.
