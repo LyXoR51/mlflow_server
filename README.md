@@ -59,8 +59,7 @@ Perfect for development, prototyping, and offline testing.
 
 ### 3. **test_tracking_URI**
 
-A minimal setup to **test connections** to a remote MLflow tracking URI.
-Useful for validating authentication, SSL, and client-server communication.
+A minimal setup to **test the MLflow tracking URI** — this folder contains small scripts that only verify the tracking server endpoint is reachable and usable for basic model registration/loading. It does **not** perform full authentication, storage, or production validation.
 
 ---
 
