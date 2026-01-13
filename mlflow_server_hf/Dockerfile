@@ -1,19 +1,10 @@
-FROM continuumio/miniconda3
+FROM ghcr.io/mlflow/mlflow
 
 WORKDIR /home/app
 
-RUN apt-get update
-RUN apt-get install nano unzip
-RUN apt install curl -y
-
-RUN curl -fsSL https://get.deta.dev/cli.sh | sh
-
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-RUN unzip awscliv2.zip
-RUN ./aws/install
-
-COPY requirements.txt /dependencies/requirements.txt
-RUN pip install -r /dependencies/requirements.txt
+RUN pip install --no-cache-dir \
+    boto3 \
+    psycopg2-binary
 
 CMD mlflow server \
     --host 0.0.0.0 \
