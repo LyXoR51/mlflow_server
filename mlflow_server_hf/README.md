@@ -22,11 +22,10 @@ git clone https://huggingface.co/spaces/<HF-username>/mlflow-server
 
 ## 2. Copy the deployment files
 
-Copy the Docker configuration files into your local Hugging Face Space folder:
+Copy the Dockerfile into your local Hugging Face Space folder:
 
 ```bash
 cp mlflow_server/mlflow_server_hf/Dockerfile mlflow-server/
-cp mlflow_server/mlflow_server_hf/requirements.txt mlflow-server/
 ```
 
 ---
