@@ -77,7 +77,7 @@ A minimal setup to **test the MLflow tracking URI** — this folder contains sma
 
    ```bash
    git clone https://github.com/LyXoR51/mlflow_server.git
-   cd mlflow-server
+   cd mlflow_server
    ```
 
 2. Select the configuration you want to use:
