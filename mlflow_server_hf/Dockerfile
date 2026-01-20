@@ -1,8 +1,10 @@
 FROM ghcr.io/mlflow/mlflow
 
-RUN pip install --no-cache-dir \
-    boto3 \
-    psycopg2-binary
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD mlflow server \
     --host 0.0.0.0 \
